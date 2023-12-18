@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brown:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Pro:wght@300;400;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Upgrade:wght@400&display=swap" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="./codeMeta.json"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const passwordInput = document.getElementById('passwordInput');
+      const togglePassword = document.getElementById('togglePassword');
+  
+      togglePassword.addEventListener('click', function () {
+        passwordInput.type = (passwordInput.type === 'password') ? 'text' : 'password';
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="bg"></div>
+    <div class="bg-1"></div>
+
+    <div class="first-name-caption">
+      <div class="bg-5"></div>
+      <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+      </form>
+    </div>
+
+    <div class="last-name-caption">
+        <form>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </form>
+        <div class="bg-3"></div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="logo"></div>
+      <span class="for-individuals">For Individuals</span>
+      <span class="start-benefiting">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</span>
+    </div>
+
+    <div class="gender-form">
+      <form>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="form-filled-a">
+      <div class="form-filled-b">
+        <form>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </form>
+      </div>
+    </div>
+
+    <div class="div-form-filled-no-caption">
+      <div class="div-form-filled-no-caption-f">
+        <form>
+          <label for="weight">Weight (KG)</label>
+          <input type="text" id="weight" name="weight" placeholder="Enter Weight" required>
+        </form>
+      </div>
+    </div>
+
+    <div class="div-form-filled-no-caption-13">
+      <form>
+        <label for="height">Height (CM)</label>
+        <input type="text" id="height" name="height" placeholder="Enter height here.." required>
+      </form>
+    </div>
+
+    <div class="form-filled-no-caption-1a">
+      <form>
+        <label for="levelSelect">Activity Level</label>
+        <select id="levelSelect" name="level">
+          <option value="level1">Level 1</option>
+          <option value="level2">Level 2</option>
+          <option value="level3">Level 3</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="form-filled-no-caption-21">
+      <form>
+        <div class="password-container">
+          <label for="passwordInput">Password:</label>
+          <input type="password" id="passwordInput" name="password" placeholder="Enter your password">
+          <span id="togglePassword">👁️</span>
+        </div>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+    <div class="div-terms-use-privacy-policy">
+      <span class="span-by-clicking-register-agree">By clicking Register, you agree to our </span>
+      <span class="span-terms-of-use">Terms of Use</span>
+      <span class="span-by-clicking-register-agree-28"> and our </span>
+      <span class="span-terms-of-use-29">Privacy Policy</span>
+    </div>
+  </div>
+
+</body>
+</html>
